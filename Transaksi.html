@@ -1,0 +1,42 @@
+
+<html>
+<head>
+    <title>Form Pemesanan</title>
+</head>
+<body bgcolor="#FAFAFA" text="#3d3125">
+    <center>
+        <h2>Formulir Pemesanan Kopi & Pengiriman</h2>
+        <br>
+        <form action="#" method="post" onsubmit="alert('Data Transaksi Sukses Disimpan!'); return false;">
+            <table border="0" cellpadding="8" bgcolor="#FAFAFA" width="95%">
+                <tr><th colspan="2" bgcolor="#C4C4C4">DATA PENERIMA</th></tr>
+                <tr><td><b>Nama Lengkap:</b></td><td><input type="text" name="nama" size="25" required></td></tr>
+                <tr><td><b>Alamat Email:</b></td><td><input type="email" name="email" size="25" required></td></tr>
+                <tr><td><b>No. HP / WA:</b></td><td><input type="text" name="hp" size="25" required></td></tr>
+                <tr><td><b>Alamat Rumah:</b></td><td><textarea name="alamat" rows="3" cols="25" required></textarea></td></tr>
+                <tr><th colspan="2" bgcolor="#C4C4C4">LOGISTIK & BAYAR</th></tr>
+                <tr>
+                    <td><b>Kurir:</b></td>
+                    <td>
+                        <input type="radio" name="kurir" value="JNE" checked> JNE <br>
+                        <input type="radio" name="kurir" value="J&T"> J&T
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Pembayaran:</b></td>
+                    <td>
+                        <select name="pembayaran" required>
+                            <option value="">-- Pilih Pembayaran --</option>
+                            <option value="BNI">wondr by BNI</option>
+                            <option value="BCA">blu by BCA Digital</option>
+                            <option value="BRI">BRImo BRI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td><b>Tanggal Bayar:</b></td><td><input type="date" name="tanggal" required></td></tr>
+                <tr><td colspan="2" align="center" bgcolor="#C4C4C4"><input type="submit" value="Konfirmasi Transaksi"></td></tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
